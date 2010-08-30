@@ -4,7 +4,7 @@ These files will automatically install a Flex SDK into a maven repository.
 
 I can not take any credit for the excellent work as they are the work of Dragos Dascalita and all information for them can be found on his excellent blog post
 
-http://www.flexthinker.com/2010/03/installing-flex-sdk-into-maven-repository/
+"Original Post":http://www.flexthinker.com/2010/03/installing-flex-sdk-into-maven-repository/
 
 I took his original file and have tweaked them for Flex 4.5 
 
