@@ -57,6 +57,7 @@ echo "---------------------------------"
 
 
 install-player-swc-artifact playerglobal playerglobal.swc 10.1 10.1
+#install-player-swc-artifact playerglobal playerglobal.swc 10.0 10.0
 
 echo "installing default playerblobal as 10.1"
 mvn install:install-file -DgroupId=com.adobe.flex.framework -DartifactId=playerglobal -Dversion=$sdk_version -Dfile=$libs_path/player/10.1/playerglobal.swc -DgeneratePom=true -Dpackaging=swc -Dclassifier=10.1 -DcreateChecksum=true
