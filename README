@@ -1,3 +1,5 @@
+h2. Maven Flex SDK Install
+
 These files will automatically install a Flex SDK into a maven repository. 
 
 I can not take any credit for the excellent work as they are the work of Dragos Dascalita and all information for them can be found on his excellent blog post
@@ -6,11 +8,11 @@ http://www.flexthinker.com/2010/03/installing-flex-sdk-into-maven-repository/
 
 I took his original file and have tweaked them for Flex 4.5 
 
-They have a bug fix in install-swc-rb-artifact in install-flex-framework.sh, fixing an issue where the passed in classifier was not used.
+* They have a bug fix in install-swc-rb-artifact in install-flex-framework.sh, fixing an issue where the passed in classifier was not used.
 
-They clean up any files that might be left around before starting a new build (I needed to do this because I had to keep rerunning them)
+* They clean up any files that might be left around before starting a new build (I needed to do this because I had to keep rerunning them)
 
-They no longer install playerglobal 10.0 as this fails for Flex SDK 4.5 - the line which installs that is commented out in install-flex-framework.sh (playerglobal 10.1 was installed as the default with these scripts any way)
+* They no longer install playerglobal 10.0 as this fails for Flex SDK 4.5 - the line which installs that is commented out in install-flex-framework.sh (playerglobal 10.1 was installed as the default with these scripts any way)
 
 
 I have tried them with Flex 4.5.0.17077 but they ought to work with anything after that.
