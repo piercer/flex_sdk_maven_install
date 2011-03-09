@@ -48,7 +48,7 @@ The contents of the files contained in this Flex SDK directory are subject to th
 <artifactId>playerglobal</artifactId>
 <version>${SDK_VERSION}</version>
 <type>swc</type>
-<classifier>10.1</classifier>
+<classifier>10.2</classifier>
 </dependency>
 
 <dependency>

@@ -56,11 +56,10 @@ mvn install:install-file -DgroupId=com.adobe.flex.framework -DartifactId=flex-fr
 echo "---------------------------------"
 
 
-install-player-swc-artifact playerglobal playerglobal.swc 10.1 10.1
-#install-player-swc-artifact playerglobal playerglobal.swc 10.0 10.0
+install-player-swc-artifact playerglobal playerglobal.swc 10.2 10.2
 
-echo "installing default playerblobal as 10.1"
-mvn install:install-file -DgroupId=com.adobe.flex.framework -DartifactId=playerglobal -Dversion=$sdk_version -Dfile=$libs_path/player/10.1/playerglobal.swc -DgeneratePom=true -Dpackaging=swc -Dclassifier=10.1 -DcreateChecksum=true
+echo "installing default playerblobal as 10.2"
+mvn install:install-file -DgroupId=com.adobe.flex.framework -DartifactId=playerglobal -Dversion=$sdk_version -Dfile=$libs_path/player/10.2/playerglobal.swc -DgeneratePom=true -Dpackaging=swc -Dclassifier=10.2 -DcreateChecksum=true
 
 install-swc-rb-artifact en_US playerglobal playerglobal
 

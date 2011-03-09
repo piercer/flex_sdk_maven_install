@@ -98,6 +98,8 @@ install-swc-artifact datavisualization datavisualization.swc
 install-swc-artifact flash-integration flash-integration.swc
 install-swc-artifact flex flex.swc
 install-swc-artifact utilities utilities.swc
+install-swc-artifact broomstick broomstick.swc
+install-swc-artifact flashplayer_inc_playerglobal_022711 flashplayer_inc_playerglobal_022711.swc
 
 install-swc-rb-artifact en_US datavisualization datavisualization
 install-swc-rb-artifact en_US flash-integration flash-integration

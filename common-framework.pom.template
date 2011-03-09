@@ -162,5 +162,16 @@ The contents of the files contained in this Flex SDK directory are subject to th
 <version>${SDK_VERSION}</version>
 <type>rb.swc</type>
 </dependency>
+
+<dependency>
+<groupId>com.adobe.flex.framework</groupId>
+<artifactId>broomstick</artifactId>
+<version>${SDK_VERSION}</version>
+<type>swc</type>
+</dependency>
+
 </dependencies>
 </project>
+
+
+
