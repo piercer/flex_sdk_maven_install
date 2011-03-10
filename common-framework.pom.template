@@ -165,6 +165,14 @@ The contents of the files contained in this Flex SDK directory are subject to th
 
 <dependency>
 <groupId>com.adobe.flex.framework</groupId>
+<artifactId>flashplayer_inc_playerglobal_022711</artifactId>
+<version>${SDK_VERSION}</version>
+<type>swc</type>
+<scope>external</scope>
+</dependency>
+
+<dependency>
+<groupId>com.adobe.flex.framework</groupId>
 <artifactId>broomstick</artifactId>
 <version>${SDK_VERSION}</version>
 <type>swc</type>
