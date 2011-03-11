@@ -1,1 +1,5 @@
 .DS_Store
+common-framework.pom
+compiler.pom
+flex-framework.pom
+framework-configs.zip
