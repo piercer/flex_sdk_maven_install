@@ -15,7 +15,140 @@
 	</defaults>
 	
 	<artifacts>
+			
+		<!-- Common Framework POM -->
 		
+		<artifact>
+			<artifactId>common-framework</artifactId>
+			<type>pom</type>
+			<dependencies>
+				<dependency>
+					<artifactId>text-layout</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>osmf</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>framework</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>spark</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>sparkskins</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>rpc</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>datavisualization</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>flash-integration</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>flex</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>framework</artifactId>
+					<type>zip</type>
+					<classifier>configs</classifier>
+				</dependency>
+				<dependency>
+					<artifactId>utilities</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>datavisualization</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>flash-integration</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>framework</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>osmf</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>rpc</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>spark</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>text-layout</artifactId>
+					<type>rb.swc</type>
+				</dependency>	
+			</dependencies>
+		</artifact>
+
+		<!-- Flex Framework POM -->
+		
+		<artifact>
+			<artifactId>flex-framework</artifactId>
+			<type>pom</type>
+			<dependencies>
+				<dependency>
+					<artifactId>common-framework</artifactId>
+					<type>pom</type>
+				</dependency>
+				<dependency>
+					<artifactId>playerglobal</artifactId>
+					<type>swc</type>
+					<classifier>10.1</classifier>
+				</dependency>
+				<dependency>
+					<artifactId>playerglobal</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+			</dependencies>
+		</artifact>
+				
+		<!-- Player 10.1 -->
+		
+		<artifact>
+			<artifactId>playerglobal</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/player/10.1/playerglobal.swc</location>
+			<classifier>10.1</classifier>
+		</artifact>
+		<artifact>
+			<artifactId>playerglobal</artifactId>
+			<type>rb.swc</type>
+			<classifier>en_US</classifier>
+			<location>frameworks/locale/en_US/playerglobal_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>playerglobal</artifactId>
+			<type>rb.swc</type>
+			<location>empty.swc</location>
+		</artifact>
+		
+		<!-- Player 10.0 -->
+		
+		<artifact>
+			<artifactId>playerglobal</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/player/10.0/playerglobal.swc</location>
+			<classifier>10.0</classifier>
+		</artifact>
+
 		<!-- Spark Skins -->
 		
 		<artifact>

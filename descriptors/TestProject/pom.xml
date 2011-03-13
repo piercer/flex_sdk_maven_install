@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        >
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dz015.example</groupId>
+    <artifactId>sdk-install-test</artifactId>
+    <version>1.0</version>
+    <packaging>swf</packaging>
+
+     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--flex.sdk.version>4.5.0.19786</flex.sdk.version-->
+        <flex.sdk.version>4.1.0_test</flex.sdk.version>
+        <flexmojos.version>3.8</flexmojos.version>
+    </properties>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.flexmojos</groupId>
+                <artifactId>flexmojos-maven-plugin</artifactId>
+                <version>${flexmojos.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                	<sourceFile>SDKInstallTest.as</sourceFile>                	
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.adobe.flex</groupId>
+                        <artifactId>compiler</artifactId>
+                        <version>${flex.sdk.version}</version>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.adobe.flex.framework</groupId>
+            <artifactId>flex-framework</artifactId>
+            <version>${flex.sdk.version}</version>
+            <type>pom</type>
+        </dependency>
+
+    </dependencies>
+
+    <!-- <repositories>
+         <repository>
+             <id>flex-mojos-repository</id>
+             <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+             <releases>
+                 <enabled>true</enabled>
+             </releases>
+             <snapshots>
+                 <enabled>true</enabled>
+             </snapshots>
+         </repository>
+     </repositories> -->
+
+    <pluginRepositories>
+
+        <pluginRepository>
+            <id>flex-mojos-repository</id>
+            <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+
+    </pluginRepositories>
+
+</project>
