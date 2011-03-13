@@ -1,3 +1,4 @@
+#!/bin/sh
 #parms:
 #sdk_path: local path to unzipped SDK
 #sdk_version: SDK version

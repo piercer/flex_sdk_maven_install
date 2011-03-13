@@ -1,0 +1,41 @@
+<mapping>
+
+  <!-- zip flex_sdk_4.1.0.16076.zip empty.swc -->
+
+  <version>1.0</version>
+
+  <organization>
+    <name>Adobe Inc.</name>
+    <url>http://www.adobe.com</url>
+    <license/>
+  </organization>
+
+  <defaults>
+    <groupId>com.adobe.flex.framework</groupId>
+    <version>4.1.0_test</version>
+  </defaults>
+
+  <artifacts>
+
+      <artifact>
+        <artifactId>datavisualization</artifactId>
+        <type>swc</type>
+        <location>frameworks/libs/datavisualization.swc</location>
+      </artifact>
+
+      <artifact>
+        <artifactId>datavisualization</artifactId>
+        <type>rb.swc</type>
+        <classifier>en_US</classifier>
+        <location>frameworks/locale/en_US/datavisualization_rb.swc</location>
+      </artifact>
+
+      <artifact>
+        <artifactId>datavisualization</artifactId>
+        <type>rb.swc</type>
+        <location>empty.swc</location>
+      </artifact>
+
+  </artifacts>
+
+</mapping>

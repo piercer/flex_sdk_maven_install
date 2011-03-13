@@ -1,3 +1,4 @@
+#!/bin/sh
 #parms:
 #sdk_path: local path to unzipped SDK
 #sdk_version: SDK version
@@ -94,14 +95,14 @@ install-swc-artifact framework framework.swc
 install-swc-artifact spark spark.swc
 install-swc-artifact sparkskins sparkskins.swc
 install-swc-artifact rpc rpc.swc
-install-swc-artifact datavisualization datavisualization.swc
+#install-swc-artifact datavisualization datavisualization.swc
 install-swc-artifact flash-integration flash-integration.swc
 install-swc-artifact flex flex.swc
 install-swc-artifact utilities utilities.swc
 install-swc-artifact broomstick broomstick.swc
 install-swc-artifact flashplayer_inc_playerglobal_022711 flashplayer_inc_playerglobal_022711.swc
 
-install-swc-rb-artifact en_US datavisualization datavisualization
+#install-swc-rb-artifact en_US datavisualization datavisualization
 install-swc-rb-artifact en_US flash-integration flash-integration
 install-swc-rb-artifact en_US framework framework
 install-swc-rb-artifact en_US osmf osmf
@@ -109,7 +110,7 @@ install-swc-rb-artifact en_US rpc rpc
 install-swc-rb-artifact en_US spark spark
 install-swc-rb-artifact en_US text-layout textLayout
 
-install-swc-rb-artifact2 en_US datavisualization datavisualization
+#install-swc-rb-artifact2 en_US datavisualization datavisualization
 install-swc-rb-artifact2 en_US flash-integration flash-integration
 install-swc-rb-artifact2 en_US framework framework
 install-swc-rb-artifact2 en_US osmf osmf
@@ -134,4 +135,3 @@ install-swc-rb-artifact en_US automation_agent automation_agent
 
 install-swc-rb-artifact2 en_US automation automation
 install-swc-rb-artifact2 en_US automation_agent automation_agent
-
