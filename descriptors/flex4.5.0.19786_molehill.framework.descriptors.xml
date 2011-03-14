@@ -25,6 +25,7 @@
 				<dependency>
 					<artifactId>flashplayer_inc_playerglobal_022711</artifactId>
 					<type>swc</type>
+					<scope>external</scope>
 				</dependency>
 				<dependency>
 					<artifactId>text-layout</artifactId>
