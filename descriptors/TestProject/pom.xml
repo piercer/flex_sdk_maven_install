@@ -14,7 +14,8 @@
      <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--flex.sdk.version>4.5.0.19786</flex.sdk.version-->
-        <flex.sdk.version>4.1.0_test</flex.sdk.version>
+        <flex.sdk.version>4.5.0-MOLE-SNAPSHOT</flex.sdk.version>
+        <flexmojos.version>4.0-SNAPSHOT</flexmojos.version>
         <flexmojos.version>3.8</flexmojos.version>
     </properties>
 
@@ -27,7 +28,9 @@
                 <version>${flexmojos.version}</version>
                 <extensions>true</extensions>
                 <configuration>
-                	<sourceFile>SDKInstallTest.as</sourceFile>                	
+                	<sourceFile>InteractionTest.as</sourceFile>  
+              		<debug>true</debug>
+					<ignoreVersionIssues>true</ignoreVersionIssues>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -53,8 +56,19 @@
 
     </dependencies>
 
-    <!-- <repositories>
-         <repository>
+    <repositories>
+	
+        <repository>
+             <id>flash-nexus-repository</id>
+             <url>http://www.flashnexus.org/nexus/content/repositories/snapshots/</url>
+             <releases>
+                 <enabled>false</enabled>
+             </releases>
+             <snapshots>
+                 <enabled>true</enabled>
+             </snapshots>
+         </repository>
+        <repository>
              <id>flex-mojos-repository</id>
              <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
              <releases>
@@ -64,11 +78,20 @@
                  <enabled>true</enabled>
              </snapshots>
          </repository>
-     </repositories> -->
-
+</repositories>
     <pluginRepositories>
 
         <pluginRepository>
+              <id>flash-nexus-repository</id>
+              <url>http://www.flashnexus.org/nexus/content/repositories/snapshots/</url>
+              <releases>
+                  <enabled>false</enabled>
+              </releases>
+              <snapshots>
+                  <enabled>true</enabled>
+              </snapshots>
+          </pluginRepository> 
+       <pluginRepository>
             <id>flex-mojos-repository</id>
             <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
             <releases>
