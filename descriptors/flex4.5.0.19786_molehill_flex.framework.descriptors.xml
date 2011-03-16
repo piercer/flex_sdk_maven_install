@@ -52,13 +52,29 @@
 					<type>swc</type>
 				</dependency>
 				<dependency>
+					<artifactId>datavisualization</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
 					<artifactId>flash-integration</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>flex</artifactId>
 					<type>swc</type>
 				</dependency>
 				<dependency>
 					<artifactId>framework</artifactId>
 					<type>zip</type>
 					<classifier>configs</classifier>
+				</dependency>
+				<dependency>
+					<artifactId>utilities</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>datavisualization</artifactId>
+					<type>rb.swc</type>
 				</dependency>
 				<dependency>
 					<artifactId>flash-integration</artifactId>
@@ -165,6 +181,23 @@
 			<location>frameworks/libs/sparkskins.swc</location>
 		</artifact>
 		
+
+		<!-- Flex -->
+		
+		<artifact>
+			<artifactId>flex</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/flex.swc</location>
+		</artifact>
+
+		<!-- Utilities -->
+		
+		<artifact>
+			<artifactId>utilities</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/utilities.swc</location>
+		</artifact>
+		
 		<!-- Automation Air -->
 		
 		<artifact>
@@ -221,6 +254,25 @@
 			<location>frameworks/libs/automation/automation_spark.swc</location>
 		</artifact>
 
+		<!-- Datavisualisation -->
+		
+		<artifact>
+			<artifactId>datavisualization</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/datavisualization.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>datavisualization</artifactId>
+			<type>rb.swc</type>
+			<classifier>en_US</classifier>
+			<location>frameworks/locale/en_US/datavisualization_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>datavisualization</artifactId>
+			<type>rb.swc</type>
+			<location>empty.swc</location>
+		</artifact>
+		
 		<!-- Text Layout -->
 
 		<artifact>

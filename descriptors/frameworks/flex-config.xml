@@ -3,12 +3,6 @@
     <target-player>11</target-player>
     <swf-version>13</swf-version>
     <compiler>
-        <external-library-path>
-            <path-element>libs/flashplayer_inc_playerglobal_022711.swc</path-element>
-        </external-library-path>
-        <library-path>
-            <path-element>libs</path-element>
-        </library-path>
         <optimize>true</optimize>
         <omit-trace-statements>true</omit-trace-statements>
         <strict>true</strict>

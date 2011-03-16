@@ -21,6 +21,8 @@ package
 	import flash.events.Event;
 	import flash.geom.Rectangle;
 	import flash.text.TextField;
+	
+	import mx.collections.ArrayCollection;
 
 	[SWF(width="800", height="450", frameRate="60", backgroundColor="0")]
 	public class InteractionTest extends Sprite
