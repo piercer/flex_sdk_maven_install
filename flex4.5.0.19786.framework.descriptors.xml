@@ -22,63 +22,113 @@
 			<artifactId>common-framework</artifactId>
 			<type>pom</type>
 			<dependencies>
+
 				<dependency>
-					<artifactId>text-layout</artifactId>
+					<artifactId>advancedgrids</artifactId>
 					<type>swc</type>
 				</dependency>
 				<dependency>
-					<artifactId>osmf</artifactId>
+					<artifactId>advancedgrids</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>authoringsupport</artifactId>
 					<type>swc</type>
 				</dependency>
+
+				<dependency>
+					<artifactId>charts</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>charts</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>core</artifactId>
+					<type>swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>flash-integration</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>flash-integration</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+
 				<dependency>
 					<artifactId>framework</artifactId>
 					<type>swc</type>
 				</dependency>
 				<dependency>
-					<artifactId>spark</artifactId>
-					<type>swc</type>
-				</dependency>
-				<dependency>
-					<artifactId>sparkskins</artifactId>
-					<type>swc</type>
-				</dependency>
-				<dependency>
-					<artifactId>rpc</artifactId>
-					<type>swc</type>
-				</dependency>
-				<dependency>
-					<artifactId>flash-integration</artifactId>
-					<type>swc</type>
+					<artifactId>framework</artifactId>
+					<type>rb.swc</type>
 				</dependency>
 				<dependency>
 					<artifactId>framework</artifactId>
 					<type>zip</type>
 					<classifier>configs</classifier>
 				</dependency>
+
 				<dependency>
-					<artifactId>flash-integration</artifactId>
-					<type>rb.swc</type>
+					<artifactId>mx</artifactId>
+					<type>swc</type>
 				</dependency>
 				<dependency>
-					<artifactId>framework</artifactId>
+					<artifactId>mx</artifactId>
 					<type>rb.swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>osmf</artifactId>
+					<type>swc</type>
 				</dependency>
 				<dependency>
 					<artifactId>osmf</artifactId>
 					<type>rb.swc</type>
 				</dependency>
+
+				<dependency>
+					<artifactId>rpc</artifactId>
+					<type>swc</type>
+				</dependency>
 				<dependency>
 					<artifactId>rpc</artifactId>
 					<type>rb.swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>spark_dmv</artifactId>
+					<type>swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>spark</artifactId>
+					<type>swc</type>
 				</dependency>
 				<dependency>
 					<artifactId>spark</artifactId>
 					<type>rb.swc</type>
 				</dependency>
+
+				<dependency>
+					<artifactId>sparkskins</artifactId>
+					<type>swc</type>
+				</dependency>
+
+				<dependency>
+					<artifactId>text-layout</artifactId>
+					<type>swc</type>
+				</dependency>
 				<dependency>
 					<artifactId>text-layout</artifactId>
 					<type>rb.swc</type>
 				</dependency>	
+
 			</dependencies>
 		</artifact>
 
@@ -103,7 +153,7 @@
 				</dependency>
 			</dependencies>
 		</artifact>
-				
+		
 		<!-- Player 10.2 -->
 		
 		<artifact>
@@ -130,6 +180,30 @@
 			<artifactId>sparkskins</artifactId>
 			<type>swc</type>
 			<location>frameworks/libs/sparkskins.swc</location>
+		</artifact>	
+		
+		<!-- Authoring Support -->
+
+		<artifact>
+			<artifactId>authoringsupport</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/authoringsupport.swc</location>
+		</artifact>
+
+		<!-- Core -->
+
+		<artifact>
+			<artifactId>core</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/core.swc</location>
+		</artifact>
+
+		<!-- Spark DMV -->
+
+		<artifact>
+			<artifactId>spark_dmv</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/spark_dmv.swc</location>
 		</artifact>
 		
 		<!-- Automation Air -->
@@ -203,6 +277,63 @@
 		</artifact>
 		<artifact>
 			<artifactId>text-layout</artifactId>
+			<type>rb.swc</type>
+			<location>empty.swc</location>
+		</artifact>	
+		
+		<!-- Advanced grids -->
+
+		<artifact>
+			<artifactId>advancedgrids</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/advancedgrids.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>advancedgrids</artifactId>
+			<type>rb.swc</type>
+			<classifier>en_US</classifier>
+			<location>frameworks/locale/en_US/advancedgrids_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>advancedgrids</artifactId>
+			<type>rb.swc</type>
+			<location>empty.swc</location>
+		</artifact>	
+		
+		<!-- Charts -->
+
+		<artifact>
+			<artifactId>charts</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/charts.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>charts</artifactId>
+			<type>rb.swc</type>
+			<classifier>en_US</classifier>
+			<location>frameworks/locale/en_US/charts_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>charts</artifactId>
+			<type>rb.swc</type>
+			<location>empty.swc</location>
+		</artifact>
+
+		<!-- MX -->
+
+		<artifact>
+			<artifactId>mx</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/mx/mx.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>mx</artifactId>
+			<type>rb.swc</type>
+			<classifier>en_US</classifier>
+			<location>frameworks/locale/en_US/mx_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>mx</artifactId>
 			<type>rb.swc</type>
 			<location>empty.swc</location>
 		</artifact>
@@ -319,9 +450,7 @@
 			<artifactId>automation_agent</artifactId>
 			<type>rb.swc</type>
 			<location>empty.swc</location>
-		</artifact>	
-		
-			 
+		</artifact>
 
 		<!-- Framework -->
 		
@@ -354,6 +483,7 @@
 				<include>flex-config.xml</include>
 				<include>localFonts.ser</include>
 				<include>macFonts.ser</include>
+				<include>metadata.xml</include>
 				<include>mx-manifest.xml</include>
 				<include>mxml-2009-manifest.xml</include>
 				<include>mxml-manifest.xml</include>
