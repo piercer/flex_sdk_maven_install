@@ -1,18 +1,27 @@
 h2. Maven Flex SDK Install
 
-These files will automatically install a Flex SDK into a maven repository. 
+Flexmojos is a meavn plugin developed by "Sonatype":http://www.sonatype.org/ that allows you to build flex applications using  maven. In order to do this you have to use Flex SDK's installed by Sonatype into their own repositories. There is no documentation or official support for installing a custom flex SDK to any particular repository. Please see this page for their stance on this
 
-I can not take any credit for the excellent work as they are the work of Dragos Dascalita and all information for them can be found on his excellent blog post
+"https://docs.sonatype.org/display/FLEXMOJOS/Installing+Flex+SDK+into+maven+repository":https://docs.sonatype.org/display/FLEXMOJOS/Installing+Flex+SDK+into+maven+repository 
 
-"Original Post":http://www.flexthinker.com/2010/03/installing-flex-sdk-into-maven-repository/
+As that page shows, there *is* an automatic mechanism for installing and deploying Flex SDK's and in this project I have files that hopefully explain how to do it yourself.
 
-I took his original file and have tweaked them for Flex 4.5 
+However, please be aware that this work is not associated with Sonatype in any way, and if you wish to deploy your own Flex SDK's to your own repositories then you should not ask them for support. Also if you discuss this kind of thing on the flexmojos google groups you will be banned. I think this is wrong and have started up a google group just for discussing this. If you are interested please join here
 
-* They have a bug fix in install-swc-rb-artifact in install-flex-framework.sh, fixing an issue where the passed in classifier was not used.
+"http://groups.google.com/group/flex-sdk-maven-install":http://groups.google.com/group/flex-sdk-maven-install
 
-* They clean up any files that might be left around before starting a new build (I needed to do this because I had to keep rerunning them)
+I will be writing complete instructions in a blog soon, and then posting them here, but if you feel like diving in and having a go then here are some very preliminary instructions
 
-* They no longer install playerglobal 10.0 as this fails for Flex SDK 4.5 - the line which installs that is commented out in install-flex-framework.sh (playerglobal 10.1 was installed as the default with these scripts any way)
+h2. Preliminary Instructions (very very beta!)
+
+# Clone this repository
+# Download your flex SDK zip of choice (e.g. flex_sdk_4.5.0.19786) and put it into the directory you checked out to (the install mechanism uses the zip file) 
+# Have a look through a matching descriptor files (one for framework and one for compiler) to get a feel for how they work (e.g. flex4.5.0.19786.compiler.descriptors.xml and flex4.5.0.19786.framework.descriptors.xml)
+# Look at the install shell scripts to see how they work (e.g. install_4.5_using_descriptors.sh)
+# Run the install script (e.g ./install_4.5_using_descriptors.sh), and the 4.5.0.19786 SDK will be installed to your local repository
 
 
-I have tried them with Flex 4.5.0.17077 but they ought to work with anything after that.
+h2. WARNING
+
+* This is all pretty much in an alpha state now, and who knows how Sonatype may respond to this, but I think if we don't pester them for support then I hope that they don't mind
+* This project does conatin some files for installing a molehill compatible SDK, however there are issues with Flexmojos 4, unit testing and even running the compiled swf. I don't currently have time to go into this now, but will post information on how to get somewhere with molehill this week. 
