@@ -20,8 +20,12 @@ h2. Preliminary Instructions (very very beta!)
 # Look at the install shell scripts to see how they work (e.g. install_4.5_using_descriptors.sh)
 # Run the install script (e.g ./install_4.5_using_descriptors.sh), and the 4.5.0.19786 SDK will be installed to your local repository
 
+h2. Help 
+
+The install and deploy scripts are very osx/linux/unix centric, and for that I apologise. I have no windows machine on which to try these things out. If anybody can help provide windows scripts I would be over the moon - thanks. 
 
 h2. WARNING
 
 * This is all pretty much in an alpha state now, and who knows how Sonatype may respond to this, but I think if we don't pester them for support then I hope that they don't mind
-* This project does conatin some files for installing a molehill compatible SDK, however there are issues with Flexmojos 4, unit testing and even running the compiled swf. I don't currently have time to go into this now, but will post information on how to get somewhere with molehill this week. 
+* This project does conatin some files for installing a molehill compatible SDK, however there are issues with Flexmojos 4, unit testing and even running the compiled swf. I don't currently have time to go into this now, but will post information on how to get somewhere with molehill this week.
+
