@@ -1,10 +1,5 @@
 .DS_Store
-common-framework.pom
-compiler.pom
-flex-framework.pom
-framework-configs.zip
 .idea/
-*/target/
-descriptors/flex_sdk_4.1.0.16076.zip
-descriptors/flex_sdk_4.5.0.19786.zip
-
+target/
+flex_sdk_4.1.0.16076.zip
+flex_sdk_4.5.0.19786.zip
