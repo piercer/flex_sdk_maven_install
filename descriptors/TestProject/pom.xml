@@ -13,10 +13,9 @@
 
      <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--flex.sdk.version>4.5.0.19786</flex.sdk.version-->
         <flex.sdk.version>4.5.0-MOLE-SNAPSHOT</flex.sdk.version>
-        <!-- <flexmojos.version>4.0-SNAPSHOT</flexmojos.version> -->
-        <flexmojos.version>3.8</flexmojos.version>
+        <flexmojos.version>4.0-SNAPSHOT</flexmojos.version>
+        <!-- <flexmojos.version>3.8</flexmojos.version> -->
     </properties>
 
     <build>

@@ -4,5 +4,4 @@ compiler.pom
 flex-framework.pom
 framework-configs.zip
 .idea/
-target/
-descriptors/TestProject/target/
+*/target/
