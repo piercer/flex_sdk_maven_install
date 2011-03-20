@@ -400,13 +400,13 @@
 		<artifact>
 			<artifactId>flashIntegration</artifactId>
 			<type>swc</type>
-			<location>frameworks/libs/flashIntegration.swc</location>
+			<location>frameworks/libs/flash-integration.swc</location>
 		</artifact>
 		<artifact>
 			<artifactId>flashIntegration</artifactId>
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
-			<location>frameworks/locale/en_US/flashIntegration_rb.swc</location>
+			<location>frameworks/locale/en_US/flash-integration_rb.swc</location>
 		</artifact>
 		<artifact>
 			<artifactId>flashIntegration</artifactId>
