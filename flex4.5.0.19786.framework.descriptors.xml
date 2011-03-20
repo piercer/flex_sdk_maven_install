@@ -52,11 +52,11 @@
 				</dependency>
 
 				<dependency>
-					<artifactId>flash-integration</artifactId>
+					<artifactId>flashIntegration</artifactId>
 					<type>swc</type>
 				</dependency>
 				<dependency>
-					<artifactId>flash-integration</artifactId>
+					<artifactId>flashIntegration</artifactId>
 					<type>rb.swc</type>
 				</dependency>
 
@@ -121,11 +121,11 @@
 				</dependency>
 
 				<dependency>
-					<artifactId>text-layout</artifactId>
+					<artifactId>textLayout</artifactId>
 					<type>swc</type>
 				</dependency>
 				<dependency>
-					<artifactId>text-layout</artifactId>
+					<artifactId>textLayout</artifactId>
 					<type>rb.swc</type>
 				</dependency>	
 
@@ -265,18 +265,18 @@
 		<!-- Text Layout -->
 
 		<artifact>
-			<artifactId>text-layout</artifactId>
+			<artifactId>textLayout</artifactId>
 			<type>swc</type>
 			<location>frameworks/libs/textLayout.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>text-layout</artifactId>
+			<artifactId>textLayout</artifactId>
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
 			<location>frameworks/locale/en_US/textLayout_rb.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>text-layout</artifactId>
+			<artifactId>textLayout</artifactId>
 			<type>rb.swc</type>
 			<location>empty.swc</location>
 		</artifact>	
@@ -398,18 +398,18 @@
 		<!-- Flash Integration -->
 		
 		<artifact>
-			<artifactId>flash-integration</artifactId>
+			<artifactId>flashIntegration</artifactId>
 			<type>swc</type>
-			<location>frameworks/libs/flash-integration.swc</location>
+			<location>frameworks/libs/flashIntegration.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>flash-integration</artifactId>
+			<artifactId>flashIntegration</artifactId>
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
-			<location>frameworks/locale/en_US/flash-integration_rb.swc</location>
+			<location>frameworks/locale/en_US/flashIntegration_rb.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>flash-integration</artifactId>
+			<artifactId>flashIntegration</artifactId>
 			<type>rb.swc</type>
 			<location>empty.swc</location>
 		</artifact>		 
