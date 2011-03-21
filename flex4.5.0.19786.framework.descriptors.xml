@@ -451,7 +451,7 @@
 			<location>frameworks/libs/automation/automation_agent.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>automation</artifactId>
+			<artifactId>automation_agent</artifactId>
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
 			<location>frameworks/locale/en_US/automation_agent_rb.swc</location>
