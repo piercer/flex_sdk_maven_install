@@ -11,7 +11,7 @@
 	
 	<defaults>
 		<groupId>com.adobe.flex.framework</groupId>
-		<version>4.5.0-MOLE-SNAPSHOT</version>
+		<version>4.5.0.19786-MOLEHILL-022711</version>
 	</defaults>
 	
 	<artifacts>
@@ -121,19 +121,13 @@
 				</dependency>
 
 				<dependency>
-					<artifactId>text-layout</artifactId>
+					<artifactId>textLayout</artifactId>
 					<type>swc</type>
 				</dependency>
 				<dependency>
-					<artifactId>text-layout</artifactId>
+					<artifactId>textLayout</artifactId>
 					<type>rb.swc</type>
 				</dependency>	
-
-				<dependency>
-					<artifactId>flashplayer_inc_playerglobal_022711</artifactId>
-					<type>swc</type>
-					<scope>external</scope>
-				</dependency>
 
 			</dependencies>
 		</artifact>
@@ -160,12 +154,12 @@
 			</dependencies>
 		</artifact>
 		
-		<!-- Player 10.2 masquerading as player 11 -->
+		<!-- Player 11 -->
 		
 		<artifact>
 			<artifactId>playerglobal</artifactId>
 			<type>swc</type>
-			<location>frameworks/libs/player/10.2/playerglobal.swc</location>
+			<location>frameworks/libs/player/11.0/playerglobal.swc</location>
 			<classifier>11</classifier>
 		</artifact>
 		<artifact>
@@ -177,15 +171,8 @@
 		<artifact>
 			<artifactId>playerglobal</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
-		</artifact>
-
-		<!-- Molehill Player Global -->
-		
-		<artifact>
-			<artifactId>flashplayer_inc_playerglobal_022711</artifactId>
-			<type>swc</type>
-			<location>frameworks/libs/flashplayer_inc_playerglobal_022711.swc</location>
 		</artifact>
 
 		<!-- Spark Skins -->
@@ -279,19 +266,20 @@
 		<!-- Text Layout -->
 
 		<artifact>
-			<artifactId>text-layout</artifactId>
+			<artifactId>textLayout</artifactId>
 			<type>swc</type>
 			<location>frameworks/libs/textLayout.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>text-layout</artifactId>
+			<artifactId>textLayout</artifactId>
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
 			<location>frameworks/locale/en_US/textLayout_rb.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>text-layout</artifactId>
+			<artifactId>textLayout</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>	
 		
@@ -311,6 +299,7 @@
 		<artifact>
 			<artifactId>advancedgrids</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>	
 		
@@ -330,6 +319,7 @@
 		<artifact>
 			<artifactId>charts</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
 
@@ -349,6 +339,7 @@
 		<artifact>
 			<artifactId>mx</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
 
@@ -368,6 +359,7 @@
 		<artifact>
 			<artifactId>osmf</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
 		
@@ -387,6 +379,7 @@
 		<artifact>
 			<artifactId>spark</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
 
@@ -406,6 +399,7 @@
 		<artifact>
 			<artifactId>rpc</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
 		
@@ -425,6 +419,7 @@
 		<artifact>
 			<artifactId>flash-integration</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>		 
 
@@ -444,6 +439,7 @@
 		<artifact>
 			<artifactId>automation</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>		 
 
@@ -455,7 +451,7 @@
 			<location>frameworks/libs/automation/automation_agent.swc</location>
 		</artifact>
 		<artifact>
-			<artifactId>automation</artifactId>
+			<artifactId>automation_agent</artifactId>
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
 			<location>frameworks/locale/en_US/automation_agent_rb.swc</location>
@@ -463,6 +459,7 @@
 		<artifact>
 			<artifactId>automation_agent</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
 
@@ -482,6 +479,7 @@
 		<artifact>
 			<artifactId>framework</artifactId>
 			<type>rb.swc</type>
+			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>		 
 
