@@ -1,106 +1,122 @@
 <?xml version="1.0"?>
-<project
-        xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-        >
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.dz015.example</groupId>
-    <artifactId>sdk-install-test</artifactId>
-    <version>1.0</version>
-    <packaging>swf</packaging>
-
-     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <flex.sdk.version>4.5.0-MOLE-SNAPSHOT</flex.sdk.version>
-        <flexmojos.version>4.0-SNAPSHOT</flexmojos.version>
-        <!-- <flexmojos.version>3.8</flexmojos.version> -->
-    </properties>
-
-    <build>
-        <sourceDirectory>src</sourceDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.sonatype.flexmojos</groupId>
-                <artifactId>flexmojos-maven-plugin</artifactId>
-                <version>${flexmojos.version}</version>
-                <extensions>true</extensions>
-                <configuration>
-                	<sourceFile>InteractionTest.as</sourceFile>  
-              		<debug>true</debug>
-					<ignoreVersionIssues>true</ignoreVersionIssues>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.adobe.flex</groupId>
-                        <artifactId>compiler</artifactId>
-                        <version>${flex.sdk.version}</version>
-                        <type>pom</type>
-                    </dependency>
-                </dependencies>
-            </plugin>
-
-        </plugins>
-    </build>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>com.adobe.flex.framework</groupId>
-            <artifactId>flex-framework</artifactId>
-            <version>${flex.sdk.version}</version>
-            <type>pom</type>
-        </dependency>
-
-    </dependencies>
-
-    <repositories>
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
 	
-        <repository>
-             <id>flash-nexus-repository</id>
-             <url>http://www.flashnexus.org/nexus/content/repositories/snapshots/</url>
-             <releases>
-                 <enabled>false</enabled>
-             </releases>
-             <snapshots>
-                 <enabled>true</enabled>
-             </snapshots>
-         </repository>
-        <repository>
-             <id>flex-mojos-repository</id>
-             <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
-             <releases>
-                 <enabled>true</enabled>
-             </releases>
-             <snapshots>
-                 <enabled>true</enabled>
-             </snapshots>
-         </repository>
-</repositories>
-    <pluginRepositories>
-
-        <pluginRepository>
-              <id>flash-nexus-repository</id>
-              <url>http://www.flashnexus.org/nexus/content/repositories/snapshots/</url>
-              <releases>
-                  <enabled>false</enabled>
-              </releases>
-              <snapshots>
-                  <enabled>true</enabled>
-              </snapshots>
-          </pluginRepository> 
-       <pluginRepository>
-            <id>flex-mojos-repository</id>
-            <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-
-    </pluginRepositories>
-
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.dz015.example</groupId>
+	<artifactId>sdk-install-test</artifactId>
+	<version>1.0</version>
+	<packaging>swf</packaging>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<flex.sdk.version>4.5.0.19786-MOLEHILL-022711</flex.sdk.version>
+		<flexmojos.version>4.0-beta-6</flexmojos.version>
+	</properties>
+	
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				
+				<groupId>org.sonatype.flexmojos</groupId>
+				<artifactId>flexmojos-maven-plugin</artifactId>
+				<version>${flexmojos.version}</version>
+				<extensions>true</extensions>
+				
+				<configuration>
+					<sourceFile>InteractionTest.as</sourceFile>
+					<debug>true</debug>
+					<swfVersion>13</swfVersion>
+					<targetPlayer>11.0.0</targetPlayer>
+				</configuration>
+				
+				<dependencies>
+					<dependency>
+						<groupId>com.adobe.flex</groupId>
+						<artifactId>compiler</artifactId>
+						<version>${flex.sdk.version}</version>
+						<type>pom</type>
+					</dependency>
+				</dependencies>
+				
+				<executions>
+                    <execution>
+                        <goals>
+                            <goal>wrapper</goal>
+                        </goals>
+                        <configuration>
+                            <parameters>
+                                <wmode>direct</wmode>
+                                <minPlayerVersion>${targetPlayer.version}</minPlayerVersion>
+                            </parameters>
+                            <templateURI>folder:src/main/resources/htmlwrapper-template/</templateURI>
+                        </configuration>
+                    </execution>
+                </executions>
+				
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.adobe.flex.framework</groupId>
+			<artifactId>flex-framework</artifactId>
+			<version>${flex.sdk.version}</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+		  <groupId>com.away3d</groupId>
+		  <artifactId>away3d</artifactId>
+		  <version>ALPHA</version>
+		  <type>swc</type>
+		</dependency>
+	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>flash-nexus-repository</id>
+			<url>http://www.flashnexus.org/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>flex-mojos-repository</id>
+			<url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>sonatype-staging</id>
+			<url>https://oss.sonatype.org/content/groups/staging/</url>
+		</repository>
+	</repositories>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>flash-nexus-repository</id>
+			<url>http://www.flashnexus.org/nexus/content/groups/public/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>flex-mojos-repository</id>
+			<url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>sonatype-staging</id>
+			<url>https://oss.sonatype.org/content/groups/staging/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
 </project>
