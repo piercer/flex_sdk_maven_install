@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<flex.sdk.version>4.5.0.19786</flex.sdk.version>
-		<flexmojos.version>4.0-SNAPSHOT</flexmojos.version>
+		<flexmojos.version>4.0-beta-6</flexmojos.version>
 	</properties>
 	
 	<build>
@@ -52,17 +52,18 @@
 		<dependency>
 			<groupId>com.adobe.flexunit</groupId>
 			<artifactId>flexunit</artifactId>
-			<version>4.1.0-beta3</version>
+			<version>4.1.0-RC2</version>
+			<classifier>flex_4.1.0.16076</classifier>
 			<type>swc</type>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>hamcrest-as3</groupId>
-			<artifactId>hamcrest-as3</artifactId>
-			<version>1.1.0</version>
+		<!-- <dependency>
+			<groupId>com.adobe.flexunit</groupId>
+			<artifactId>flexunit</artifactId>
+			<version>4.0-rc-1</version>
 			<type>swc</type>
 			<scope>test</scope>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	
 	<repositories>
