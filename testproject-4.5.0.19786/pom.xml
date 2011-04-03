@@ -14,7 +14,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<flex.sdk.version>4.5.0.19786</flex.sdk.version>
-		<flexmojos.version>4.0-beta-6</flexmojos.version>
+		<flexmojos.version>4.0-beta-7</flexmojos.version>
+		<flexunit.version>4.1.0-RC2</flexunit.version>
+		<flexunit.classifier>flex_4.1.0.16076</flexunit.classifier>
 	</properties>
 	
 	<build>
@@ -52,18 +54,11 @@
 		<dependency>
 			<groupId>com.adobe.flexunit</groupId>
 			<artifactId>flexunit</artifactId>
-			<version>4.1.0-RC2</version>
-			<classifier>flex_4.1.0.16076</classifier>
+			<version>${flexunit.version}</version>
+			<classifier>${flexunit.classifier}</classifier>
 			<type>swc</type>
 			<scope>test</scope>
 		</dependency>
-		<!-- <dependency>
-			<groupId>com.adobe.flexunit</groupId>
-			<artifactId>flexunit</artifactId>
-			<version>4.0-rc-1</version>
-			<type>swc</type>
-			<scope>test</scope>
-		</dependency> -->
 	</dependencies>
 	
 	<repositories>
