@@ -490,6 +490,7 @@
 			<location>frameworks</location>
 			<includes>
 				<include>air-config.xml</include>
+				<include>airmobile-config.xml</include>
 				<include>build.xml</include>
 				<include>flash-unicode-table.xml</include>
 				<include>flex-config.xml</include>
