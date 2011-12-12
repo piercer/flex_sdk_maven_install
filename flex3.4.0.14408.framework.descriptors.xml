@@ -67,6 +67,7 @@
 				<dependency>
 					<artifactId>playerglobal</artifactId>
 					<type>swc</type>
+					<classifier>10</classifier>
 				</dependency>
 			</dependencies>
 		</artifact>
@@ -76,9 +77,23 @@
 		<artifact>
 			<artifactId>playerglobal</artifactId>
 			<type>swc</type>
+			<classifier>10</classifier>
 			<location>frameworks/libs/player/10/playerglobal.swc</location>
 		</artifact>
 
+		<artifact>
+			<artifactId>playerglobal</artifactId>
+			<type>swc</type>
+			<classifier>9</classifier>
+			<location>frameworks/libs/player/9/playerglobal.swc</location>
+		</artifact>
+
+		<artifact>
+			<artifactId>playerglobal</artifactId>
+			<type>swc</type>
+			<classifier></classifier>
+			<location>empty.swc</location>
+		</artifact>
 		<!-- Flex -->
 		
 		<artifact>
@@ -112,6 +127,12 @@
 		<artifact>
 			<artifactId>rpc</artifactId>
 			<type>rb.swc</type>
+			<classifier>fr_FR</classifier>
+			<location>frameworks/locale/fr_FR/rpc_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>rpc</artifactId>
+			<type>rb.swc</type>
 			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
@@ -128,6 +149,12 @@
 			<type>rb.swc</type>
 			<classifier>en_US</classifier>
 			<location>frameworks/locale/en_US/framework_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>framework</artifactId>
+			<type>rb.swc</type>
+			<classifier>fr_FR</classifier>
+			<location>frameworks/locale/fr_FR/framework_rb.swc</location>
 		</artifact>
 		<artifact>
 			<artifactId>framework</artifactId>
@@ -169,6 +196,12 @@
 		<artifact>
 			<artifactId>fiber</artifactId>
 			<type>rb.swc</type>
+			<classifier>fr_FR</classifier>
+			<location>3.6/locale/fiber_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>fiber</artifactId>
+			<type>rb.swc</type>
 			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
@@ -194,6 +227,12 @@
 		<artifact>
 			<artifactId>fds</artifactId>
 			<type>rb.swc</type>
+			<classifier>fr_FR</classifier>
+			<location>3.6/locale/fds_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>fds</artifactId>
+			<type>rb.swc</type>
 			<classifier></classifier>
 			<location>empty.swc</location>
 		</artifact>
@@ -211,6 +250,352 @@
 		</artifact>
 		<artifact>
 			<artifactId>serializers</artifactId>
+			<type>rb.swc</type>
+			<classifier>fr_FR</classifier>
+			<location>3.6/locale/serializers_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>serializers</artifactId>
+			<type>rb.swc</type>
+			<classifier></classifier>
+			<location>empty.swc</location>
+		</artifact>
+		
+		<!-- And even more Adobe stuff -->
+		<!-- CS Libs -->
+		<artifact>
+			<artifactId>apedelta</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<location>cslibs/apedelta.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csaw</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<classifier>Bridge</classifier>
+			<location>cslibs/csaw_bridge.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csaw</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<classifier>Illustrator</classifier>
+			<location>cslibs/csaw_illustrator.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csaw</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<classifier>InCopy</classifier>
+			<location>cslibs/csaw_incopy.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csaw</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<classifier>InDesign</classifier>
+			<location>cslibs/csaw_indesign.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csaw</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<classifier>Photoshop</classifier>
+			<location>cslibs/csaw_photoshop.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csaw</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<classifier></classifier>
+			<location>empty.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>csawlib</artifactId>
+			<groupId>com.adobe.flex.cslibs</groupId>
+			<type>swc</type>
+			<location>cslibs/csawlib.swc</location>
+		</artifact>
+		<!-- CSAR -->
+		<!-- Host adapters -->
+		<artifact>
+			<artifactId>host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>pom</type>
+			<dependencies>
+				<artifactId>ai_host_adapter</artifactId>
+				<type>pom</type>
+			</dependencies>
+			<dependencies>
+				<artifactId>id_host_adapter</artifactId>
+				<type>pom</type>
+			</dependencies>
+			<dependencies>
+				<artifactId>ps_host_adapter</artifactId>
+				<type>pom</type>
+			</dependencies>
+		</artifact>
+		<artifact>
+			<artifactId>host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<classifier>all</classifier>
+			<location>csar/cs_host_adapter.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<classifier>InCopy</classifier>
+			<location>csar/ic_host_adapter.swc</location>
+		</artifact>
+		<!-- ai host adapter -->
+		<artifact>
+			<artifactId>ai_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>pom</type>
+		</artifact>
+		<artifact>
+			<artifactId>ai_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<classifier>swc</classifier>
+			<location>csar/ai_host_adapter.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>ai_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>mac</classifier>
+			<location>csadapters/AIHostAdapter-mac.zip</location>
+		</artifact>
+		<artifact>
+			<artifactId>ai_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>win</classifier>
+			<location>csadapters/AIHostAdapter-win.zip</location>
+		</artifact>
+		<!-- id host adapter -->
+		<artifact>
+			<artifactId>id_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>pom</type>
+		</artifact>
+		<artifact>
+			<artifactId>id_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<classifier>swc</classifier>
+			<location>csar/id_host_adapter.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>id_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>mac</classifier>
+			<location>csadapters/IDHostAdapter-mac.zip</location>
+		</artifact>
+		<artifact>
+			<artifactId>id_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>win</classifier>
+			<location>csadapters/IDHostAdapter-win.zip</location>
+		</artifact>
+		<!-- ps host adapter -->
+		<artifact>
+			<artifactId>ps_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>pom</type>
+		</artifact>
+		<artifact>
+			<artifactId>ps_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<classifier>swc</classifier>
+			<location>csar/ps_host_adapter.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>ps_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>mac</classifier>
+			<location>csadapters/PSHostAdapter-mac.zip</location>
+		</artifact>
+		<artifact>
+			<artifactId>ps_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>win32</classifier>
+			<location>csadapters/PSHostAdapter-win32.zip</location>
+		</artifact>
+		<artifact>
+			<artifactId>ps_host_adapter</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>zip</type>
+			<classifier>win64</classifier>
+			<location>csadapters/PSHostAdapter-win64.zip</location>
+		</artifact>
+		
+		<artifact>
+			<artifactId>awsi</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/awsi.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>Cairngorm</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/Cairngorm.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>cmisclientlib</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/cmisclientlib.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>CSXSLibrary</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/CSXSLibrary-2.0-sdk-3.4-public.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>XMPCore</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/XMPCore.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>xmpns_dc</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/xmpsns_dc.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>xmpns_mm</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/xmpsns_mm.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>xmpns_rights</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/xmpsns_rights.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>xmpns_xmp</artifactId>
+			<groupId>com.adobe.flex.csar</groupId>
+			<type>swc</type>
+			<location>csar/xmpsns_xmp.swc</location>
+		</artifact>
+		
+		<!-- AIR elements -->
+		
+		<artifact>
+			<artifactId>air-framework</artifactId>
+			<type>pom</type>
+			<dependencies>
+				<dependency>
+					<artifactId>common-framework</artifactId>
+					<type>pom</type>
+				</dependency>
+				<dependency>
+					<artifactId>aircore</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>airframework</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>airglobal</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>applicationupdater</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>applicationupdater_ui</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>servicemonitor</artifactId>
+					<type>swc</type>
+				</dependency>
+				<dependency>
+					<artifactId>airframework</artifactId>
+					<type>rb.swc</type>
+				</dependency>
+			</dependencies>
+		</artifact>
+
+		<!-- AIR Core -->
+		
+		<artifact>
+			<artifactId>aircore</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/air/aircore.swc</location>
+		</artifact>
+		
+		<!-- AIR Global -->
+		
+		<artifact>
+			<artifactId>airglobal</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/air/airglobal.swc</location>
+		</artifact>
+
+		<!-- AIR Application Updater -->
+		
+		<artifact>
+			<artifactId>applicationupdater</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/air/applicationupdater.swc</location>
+		</artifact>
+
+		<!-- AIR Application Updater UI -->
+		
+		<artifact>
+			<artifactId>applicationupdater_ui</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/air/applicationupdater_ui.swc</location>
+		</artifact>
+
+		<!-- AIR Service Monitor -->
+		
+		<artifact>
+			<artifactId>servicemonitor</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/air/servicemonitor.swc</location>
+		</artifact>
+		
+		<!-- AIR Framework -->
+		
+		<artifact>
+			<artifactId>airframework</artifactId>
+			<type>swc</type>
+			<location>frameworks/libs/air/airframework.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>airframework</artifactId>
+			<type>rb.swc</type>
+			<classifier>en_US</classifier>
+			<location>frameworks/locale/en_US/airframework_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>airframework</artifactId>
+			<type>rb.swc</type>
+			<classifier>fr_FR</classifier>
+			<location>frameworks/locale/fr_FR/airframework_rb.swc</location>
+		</artifact>
+		<artifact>
+			<artifactId>airframework</artifactId>
 			<type>rb.swc</type>
 			<classifier></classifier>
 			<location>empty.swc</location>
