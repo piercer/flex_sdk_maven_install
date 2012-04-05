@@ -636,7 +636,13 @@
 				<include>themes/</include>
 			</includes>
 		</artifact>
-		
+
+		<!-- Halo -->
+		<artifact>
+			<artifactId>mx</artifactId>
+			<type>swc</type>
+			<location>frameworks/themes/Halo/halo.swc</location>
+		</artifact>		
 	</artifacts>
 	
 </mapping>
